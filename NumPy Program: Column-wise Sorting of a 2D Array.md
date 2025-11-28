@@ -14,25 +14,16 @@ To write a **NumPy** program that sorts the elements in each column of a given 2
 ##  Program
 ```
 import numpy as np
-
-arr = eval(input())
-arr = np.array(arr)
-
-print("Printing Original array")
+arr=np.array(eval(input()))
+print("Given array")
 print(arr)
-
-sorted_by_second_row = arr[:, arr[1].argsort()]
-print("Sorting Original array by second row")
-print(sorted_by_second_row)
-
-sorted_by_second_col = arr[arr[:, 1].argsort()]
-print("Sorting Original array by second column")
-print(sorted_by_second_col)
+print()
+print(np.sort(arr,axis=0))
 
 ```
 
 ## Output
-<img width="1126" height="729" alt="image" src="https://github.com/user-attachments/assets/88ae9880-6858-4b8c-a903-4e94cd25dfe9" />
+<img width="610" height="439" alt="image" src="https://github.com/user-attachments/assets/1c5a1a90-d87c-4674-8560-593d3fa12ed4" />
 
 ## Result
 Thus, the program successfully sorts each column of the given 2D NumPy array in ascending order.
